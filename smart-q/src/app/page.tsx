@@ -14,11 +14,11 @@ export default function Home() {
       <header className="w-full flex justify-between items-center p-8 z-10 animate-fade-up opacity-0">
         <div className="text-xl font-bold tracking-tighter">SMART<span className="text-accent">—Q</span></div>
         <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
-          <Link href="/about" className="hover:text-accent transition-colors">Vision</Link>
+          <Link href="/about" className="hover:text-accent transition-colors">About</Link>
           <Link href="/solutions" className="hover:text-accent transition-colors">Solutions</Link>
           <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
         </nav>
-        <Link href="/admin" className="text-xs font-semibold tracking-widest uppercase py-2 px-4 border border-surface-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300">
+        <Link href="/admin/login" className="text-xs font-semibold tracking-widest uppercase py-2 px-4 border border-surface-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300">
           Admin
         </Link>
       </header>
@@ -52,8 +52,8 @@ export default function Home() {
             </span>
           </Link>
           
-          <Link 
-            href="/provider" 
+          <Link
+            href="/provider/login"
             className="group w-full sm:w-64 h-16 flex items-center justify-center gap-3 bg-transparent border border-surface-border hover:border-foreground text-foreground rounded-full transition-all hover:bg-surface active:scale-95"
           >
             <span className="font-medium tracking-wide text-sm uppercase">Provider Access</span>
